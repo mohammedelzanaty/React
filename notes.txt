@@ -1,0 +1,15 @@
+- Course Material
+    -> https://bit.ly/react-v4
+- Props : it's a property that we pass from the parent component to the child component
+- const App() => { return ();} it's a functional component or stateless component.
+- Continuous Integration
+  -> https://travis-ci.org/
+  -> https://circleci.com/
+- To debug es-lint -> npm  run lint -- --debug
+- https://parceljs.org/
+- npm install -D parcel-bundler
+- http://browserify.org/
+- https://frontendmasters.com/teachers/james-halliday/
+- npm install -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+- The process.env global variable is injected by the Node at runtime for your application to use and it represents the state of the system environment your application is in when it starts. 
+  
