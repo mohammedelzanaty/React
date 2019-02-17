@@ -2,6 +2,7 @@ import React from 'react';
 import pf from 'petfinder-client';
 
 import Pet from './Pet';
+import { navigate } from '@reach/router';
 
 const petfinder = pf({
   key: process.env.API_KEY,
@@ -13,6 +14,7 @@ class Results extends React.Component {
     super(props);
 
     this.state = {
+      loading: true,
       pets: []
     };
   }
@@ -30,12 +32,20 @@ class Results extends React.Component {
             : [];
         //  setStates takes in an object and does a shallow merge with your current state.
         this.setState({
-          pets
+          pets,
+          loading: false
         });
-      });
+      }).catch( () => navigate("/"));
   }
 
   render() {
+    if (this.state.loading) {
+      return (
+        <div className="details flex flex-center-vertical flex-center-horizontal">
+          <img src="./images/loading.gif" alt="loading" />
+        </div>
+      );
+    }
     return (
       <div className="search">
         {this.state.pets.map(pet => {
