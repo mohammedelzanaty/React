@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: #F5F6F7;
+  color: #1F2667;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.home-page__image {
+  height: 280px;
+  margin-bottom: 1em;
+}
+
+.home-page__image img {
+  position: absolute;
+  top: -8em;
+  right: -13em;
+}
+
+@media only screen and (min-width: 770px) {
+  .home-page__image img {
+    top: -5em;
+    right: -3em;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .home-page__content {
+    padding: 1em 2.5em 2em;
+  }
+}
+
+.home-page__content {
+  margin-top: -3em;
+  padding: 0 1.5em 2em;
+}
+
+@media only screen and (min-width: 641px) {
+  .home-page__content h3 {
+    font-size: 2.4em;
+  }
+}
+
+.home-page__content .title {
+  display: inline-block;
+  font-size: 2.0em;
+  font-weight: 600;
+  color: #1F2667;
+  margin-bottom: 1em;
+}
+
+.container{
+  padding: 2em;
+}
+
+.home-page__link {
+  position: relative;
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-top: 0.5em;
+  padding: 0 50px 0 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00d4ff));
+  background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+  border-radius: 6px;
+  border-color: #1F2667;
+  color: #fff;
+  z-index: 1;
+}
+.home-page__link:before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 30px;
+  -webkit-transition: all 175ms ease-out;
+  transition: all 175ms ease-out;
+}
+
+.home-page__link:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 30px;
+  -webkit-transition: all 175ms ease-out;
+  transition: all 175ms ease-out;
+}
+
+a {
+  text-decoration: none;
+  color: #1F2667;
+}
+nav {
+  margin-bottom: 10px;
+}
+nav .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin: 0 10px 0px 0px;
+}
+nav .nav-link:hover {
+  border-bottom: 1px solid #1F2667; 
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 2em 0;
+}
+
+li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+li:before {
+  float: left;
+  margin-left: -1.5em;
+  color: #0074D9;
+}
