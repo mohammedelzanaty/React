@@ -1,6 +1,5 @@
 import React from 'react';
-import {Link} from '@reach/router';
-
+import { Link } from '@reach/router';
 
 const Header = () => {
   return (
@@ -12,11 +11,18 @@ const Header = () => {
         />
       </div>
       <div className="home-page__content">
-        <Link to="/" className="title">React JS Articles</Link>
+        <Link to="/" className="title">
+          React JS Articles
+        </Link>
 
         <nav>
-            <Link className="nav-link" to="/">Home</Link>
-            <Link className="nav-link" to="/context-api-rakshit-soral"> Context API</Link>
+          <Link className="nav-link" to="/">
+            Home
+          </Link>
+          <Link className="nav-link" to="/context-api-rakshit-soral">
+            {' '}
+            Context API
+          </Link>
         </nav>
       </div>
     </div>
