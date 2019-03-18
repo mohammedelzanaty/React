@@ -18,7 +18,7 @@ class App extends React.Component {
           <Results path="/" />
           <Details path="/details/:id" />
           <Search path="/search-params" />
-          <FourOhFour default/>
+          <FourOhFour default />
         </Router>
       </div>
     );

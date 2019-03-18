@@ -35,7 +35,8 @@ class Results extends React.Component {
           pets,
           loading: false
         });
-      }).catch( () => navigate("/"));
+      })
+      .catch(() => navigate('/'));
   }
 
   render() {
